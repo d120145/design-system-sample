@@ -1,0 +1,15 @@
+{
+  "name": "design-system-sample",
+  "version": "1.0.0",
+  "author": "Ayumu Saito",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/d120145/design-system-sample/#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d120145/design-system-sample/"
+  },
+  "bugs": {
+    "url": "https://github.com/d120145/design-system-sample/issues/"
+  }
+}
