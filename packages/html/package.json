@@ -2,5 +2,9 @@
   "name": "design-system-sample-html",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "Ayumu Saito"
+  "author": "Ayumu Saito",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
 }
