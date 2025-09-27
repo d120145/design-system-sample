@@ -11,5 +11,8 @@
   },
   "bugs": {
     "url": "https://github.com/d120145/design-system-sample/issues/"
-  }
+  },
+  "workspaces": [
+    "packages/html"
+  ]
 }
