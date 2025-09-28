@@ -1,6 +1,8 @@
 # design-system-sample
 デザインシステム（スタイルガイド・コンポーネントライブラリ）の実装サンプルです。
 
+<img alt="" src="./docs/image_readme_thumb.webp" style="width: 100%; height: auto;" height="1280" width="3840" />
+
 ## パッケージ
 - [HTML版](./packages/html/)
 
