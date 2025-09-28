@@ -1,0 +1,21 @@
+name: Code Style Check
+run-name: ${{ github.workflow }} (`${{ github.ref_name }}`)
+on:
+  push:
+permissions:
+  contents: read
+jobs:
+  code_style_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target branch
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        id: node-setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Install dependencies
+        run: npm ci
+      - name: Check code style
+        run: npm run code-style-check
