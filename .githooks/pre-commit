@@ -1,0 +1,26 @@
+#!/bin/bash
+set -e
+
+beforeCheckedFileList=$(git diff --name-only --cached --diff-filter=d)
+
+echo "Start code style check and format"
+if npm run -w packages/html prettier:format
+then
+  echo "Complete code style check and format"
+else
+  echo "Failed code style check and format"
+  exit 1
+fi
+
+afterCheckedFileList=$(git diff --name-only --cached --diff-filter=d)
+
+if [ "$beforeCheckedFileList" = "$afterCheckedFileList" ];
+then
+  for file in "$afterCheckedFileList"
+  do
+    git add $file
+  done
+else
+  echo "A file exists that has not been checked"
+  exit 1
+fi
